@@ -9,14 +9,7 @@
 
 
 <script>
-import api from "./api";
 export default {
-  mounted() {
-    api.getParks().then((response) => {
-      console.log(response);
-    }).catch(error => {
-      console.error(error.response);
-    });
-  }
+
 };
 </script>
