@@ -7,5 +7,11 @@ axios.defaults.params = {
 };
 
 export default{
-
+  getParks() {
+    return axios.get('/parks', {
+      params: {
+        stateCode: 'TX',
+      },
+    });
+  }
 };
